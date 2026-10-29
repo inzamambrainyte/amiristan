@@ -1,0 +1,834 @@
+{
+  "config": {
+    "siteName": "Amiristan",
+    "metaTitle": "Amiristan",
+    "metaDescription": "Amiristan is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences. We design and build high-quality solutions that blend technology, creativity, and seamless user experiences.",
+    "ogTitle": "Amiristan",
+    "ogDescription": "Amiristan is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences.",
+    "ogImage": "/logo.png",
+    "favicon": "/logo.png",
+    "siteUrl": "https://amiristan.com",
+    "locale": "en_US",
+    "contactEmail": "info@amiristan.com"
+  },
+  "Navigation": {
+    "brandName": "Amiristan",
+    "logoPath": "/logo.png",
+    "navLinks": [
+      {
+        "label": "Features",
+        "href": "/#services"
+      },
+      {
+        "label": "Benefits",
+        "href": "/#benefits"
+      },
+      {
+        "label": "About",
+        "href": "/#about-us"
+      },
+      {
+        "label": "FAQ",
+        "href": "/#faq"
+      }
+    ],
+    "ctaText": "Contact Us",
+    "ctaLink": "/contact"
+  },
+  "Home": {
+    "hero": {
+      "title": "AI Chatbot",
+      "description": "AI Chatbot Assistant is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere."
+    },
+    "features": {
+      "title": "Features we Offer",
+      "subtitle": "Empower your business with AI-driven speed, efficiency, and personalization",
+      "items": [
+        {
+          "id": "feature-1",
+          "title": "AI Content Generation",
+          "description": "Effortlessly generate blogs, emails, captions, reports, ideas, and more with smart context understanding.",
+          "iconName": "StarFour"
+        },
+        {
+          "id": "feature-2",
+          "title": "Document & PDF Assistance",
+          "description": "Summarize long documents, extract key points, rewrite text, and analyze content instantly.",
+          "iconName": "FileDoc"
+        },
+        {
+          "id": "feature-3",
+          "title": "Memory-Based Conversations",
+          "description": "Continue seamless chats with context retention for long workflows and ongoing tasks.",
+          "iconName": "Chats"
+        },
+        {
+          "id": "feature-4",
+          "title": "AI Image Generation",
+          "description": "Create stunning images, logos, concept art, and social media visuals with simple prompts.",
+          "iconName": "Image"
+        },
+        {
+          "id": "feature-5",
+          "title": "Chat History & Saved Sessions",
+          "description": "Revisit past conversations and save important chats for future use.",
+          "iconName": "Timer"
+        },
+        {
+          "id": "feature-6",
+          "title": "Multi-Platform Access",
+          "badge": "(Coming soon)",
+          "description": "Access the assistant from macOS, web, and upcoming mobile apps for a smooth cross-platform experience.",
+          "iconName": "Laptop"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Benefits of Using the App",
+      "subtitle": "Unlock business growth with innovative AI-driven capabilities",
+      "items": [
+        {
+          "id": "benefit-1",
+          "title": "Boost Productivity",
+          "description": "Finish tasks faster with instant assistance for writing, coding, analysis, and creative work.",
+          "iconName": "ChartLineUp"
+        },
+        {
+          "id": "benefit-2",
+          "title": "Save Hours Every Day",
+          "description": "From emails to complex problem-solving, get immediate, reliable results.",
+          "iconName": "Wallet"
+        },
+        {
+          "id": "benefit-3",
+          "title": "Stay Organized",
+          "description": "Keep everything in one place with saved chats, project-wise conversations, and multi-device access.",
+          "iconName": "UserCircle"
+        },
+        {
+          "id": "benefit-4",
+          "title": "Scale Your Capabilities",
+          "description": "Perform like a full team—researcher, writer, designer, and strategist—all in one app.",
+          "iconName": "ArrowsOut"
+        },
+        {
+          "id": "benefit-5",
+          "title": "Work Smarter, Not Harder",
+          "description": "Let AI handle repetitive tasks while you focus on strategy and execution.",
+          "iconName": "Lightning"
+        },
+        {
+          "id": "benefit-6",
+          "title": "Adaptive Solutions",
+          "description": "Benefit from AI that evolves continuously to match your changing business needs.",
+          "iconName": "PuzzlePiece"
+        }
+      ]
+    },
+    "about": {
+      "badge": "About",
+      "title": "Who We Are",
+      "paragraphs": [
+        "Amiristan is a forward-thinking digital products company dedicated to creating smart, simple, and impactful software experiences. We specialize in next-generation AI tools, productivity apps, and utility solutions designed to empower users and businesses worldwide.",
+        "With a strong focus on innovation, design excellence, and user-first experiences, Amiristan continues to push the boundaries of what technology can do—turning powerful ideas into everyday solutions that make life easier, faster, and more intelligent."
+      ],
+      "ctaText": "View Our Product",
+      "ctaLink": "https://apps.apple.com/by/app/whiteboard-draw-teach-learn/id6807375389"
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Your Questions, Answered",
+      "subtitle": "Answers to your most common questions about our AI services",
+      "items": [
+        {
+          "id": "faq-1",
+          "question": "What is AI automation and how can it help my business?",
+          "answer": "AI automation uses intelligent systems to handle repetitive tasks, reduce errors, and improve efficiency—allowing you to focus on growth and innovation."
+        },
+        {
+          "id": "faq-2",
+          "question": "How long does it take to build a custom solution?",
+          "answer": "Most projects take 4–8 weeks, depending on complexity and your specific requirements."
+        },
+        {
+          "id": "faq-3",
+          "question": "Can you integrate AI with my existing systems?",
+          "answer": "Yes, we design AI solutions that seamlessly connect with your current tools and workflows."
+        },
+        {
+          "id": "faq-4",
+          "question": "What industries benefit most from your solutions?",
+          "answer": "Our AI tools work across industries including retail, healthcare, logistics, finance, education, and more."
+        },
+        {
+          "id": "faq-5",
+          "question": "How do I get started with an AI-powered business upgrade?",
+          "answer": "Simply contact our team—we’ll assess your needs, create a plan, and start building your solution."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "badge": "Support",
+    "title": "We'd Love to hear from you?",
+    "description": "Have questions, need custom features, or want to explore an AI upgrade for your workflow? Reach out anytime.",
+    "ctaText": "Contact Us",
+    "ctaLink": "/contact",
+    "form": {
+      "nameLabel": "Name",
+      "namePlaceholder": "Your Full Name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "name@example.com",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "Subject of inquiry",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submitButton": "Send Message",
+      "submittingButton": "Sending...",
+      "successMessage": "Thank you! Your message has been sent successfully.",
+      "errorMessage": "Something went wrong. Please try again."
+    }
+  },
+  "Footer": {
+    "brandName": "Amiristan",
+    "logoPath": "/logo.png",
+    "copyright": "© Copyright 2024 Amiristan",
+    "links": [
+      {
+        "label": "Features",
+        "href": "/#services"
+      },
+      {
+        "label": "Benefits",
+        "href": "/#benefits"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      {
+        "label": "Privacy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms",
+        "href": "/terms"
+      }
+    ],
+    "socials": {
+      "linkedin": "https://www.linkedin.com",
+      "twitter": "https://www.x.com",
+      "instagram": "https://www.instagram.com",
+      "facebook": "https://www.facebook.com"
+    }
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "This Privacy Policy applies to the AI Chatbot: Ask AI Assistant application (“Application”) for mobile devices, developed and provided by Amiristan SMC PVT LTD. (“Service Provider”, “we”, “us”, or “our”). The Application is provided as a freemium service and is intended for use “AS IS.”"
+      },
+      {
+        "type": "heading",
+        "text": "Information Collection and Use"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not directly collect, store, or maintain users’ personal data on its own servers through the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may use third-party services to provide certain functionality. When you use features that rely on these services, certain information may be processed directly by the applicable third-party service provider in accordance with its own privacy policy."
+      },
+      {
+        "type": "paragraph",
+        "text": "Depending on the services and features used, this information may include technical information such as:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Device type and operating system;",
+          "Internet Protocol (IP) address;",
+          "App usage and interaction information;",
+          "Diagnostic, performance, and crash information;",
+          "Information or content voluntarily submitted by the user when using a feature powered by a third-party service."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not independently store this information on its own servers unless explicitly stated otherwise."
+      },
+      {
+        "type": "heading",
+        "text": "AI Features and User-Provided Content"
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain features of the Application may use third-party artificial intelligence services."
+      },
+      {
+        "type": "paragraph",
+        "text": "When a user submits text, prompts, questions, documents, images, or other content to an AI-powered feature, the information necessary to process the request may be transmitted directly to the relevant third-party service provider."
+      },
+      {
+        "type": "paragraph",
+        "text": "Such information is processed for the purpose of providing the requested functionality. Processing, storage, and retention by third-party providers are governed by their respective privacy policies and terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users should avoid submitting sensitive personal information through AI prompts or other input fields unless necessary for the requested functionality."
+      },
+      {
+        "type": "heading",
+        "text": "Location Information"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application does not collect or track the precise geographic location of your mobile device."
+      },
+      {
+        "type": "heading",
+        "text": "Third-Party Services"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may rely on third-party services for functionality such as artificial intelligence processing, subscriptions and payments, analytics, crash reporting, cloud-based functionality, or other supporting services."
+      },
+      {
+        "type": "paragraph",
+        "text": "These third parties may process certain information according to their own privacy policies and terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not sell users’ personal information."
+      },
+      {
+        "type": "paragraph",
+        "text": "Where information is transmitted directly to a third-party service as part of a feature requested by the user, the third party’s processing practices are governed by its applicable privacy policy."
+      },
+      {
+        "type": "heading",
+        "text": "Payments and Subscriptions"
+      },
+      {
+        "type": "paragraph",
+        "text": "If the Application offers subscriptions or in-app purchases through an application marketplace such as the Apple App Store or Google Play, payment transactions are processed by the applicable marketplace or payment provider."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not directly receive or store users’ complete payment card or banking information through the Application."
+      },
+      {
+        "type": "heading",
+        "text": "Data Retention"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because the Service Provider does not directly collect or store personal information on its own servers through the Application, it generally does not maintain a separate retention period for such information."
+      },
+      {
+        "type": "paragraph",
+        "text": "Information processed by third-party service providers may be retained according to their respective privacy policies and retention practices."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you contact the Service Provider directly, for example by email, information contained in your communication may be retained for as long as reasonably necessary to respond to your request, maintain appropriate business records, comply with legal obligations, or resolve disputes."
+      },
+      {
+        "type": "heading",
+        "text": "Data Deletion"
+      },
+      {
+        "type": "paragraph",
+        "text": "Because the Application does not directly maintain user personal data on the Service Provider’s servers, there may be no application-specific personal data stored by us to delete."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you have contacted us directly or believe that we possess personal information relating to you, you may contact us at info@amiristan.com to request information or deletion, where applicable."
+      },
+      {
+        "type": "paragraph",
+        "text": "Information processed independently by third-party service providers may be subject to the deletion procedures and policies of those providers."
+      },
+      {
+        "type": "heading",
+        "text": "Children’s Privacy"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not knowingly collect personal information from children under the age of 13."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you are a parent or legal guardian and believe that a child has provided personal information directly to the Service Provider, please contact us at info@amiristan.com, and we will take appropriate steps to address the request."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users must meet the minimum age requirements applicable in their country or obtain any required consent from a parent or legal guardian."
+      },
+      {
+        "type": "heading",
+        "text": "Security"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider takes reasonable administrative and technical measures to protect information associated with the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "However, because certain Application features may communicate with third-party services over the internet, no electronic transmission or processing method can be guaranteed to be completely secure."
+      },
+      {
+        "type": "paragraph",
+        "text": "Third-party service providers are responsible for protecting information processed through their respective systems in accordance with their own security practices and privacy policies."
+      },
+      {
+        "type": "heading",
+        "text": "Your Choices"
+      },
+      {
+        "type": "paragraph",
+        "text": "You may stop using the Application at any time by uninstalling it from your device."
+      },
+      {
+        "type": "paragraph",
+        "text": "You may also choose not to use features that require information to be transmitted to third-party services."
+      },
+      {
+        "type": "paragraph",
+        "text": "Where applicable, device permissions can be managed through your device’s operating system settings."
+      },
+      {
+        "type": "heading",
+        "text": "Disclosure Required by Law"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider may disclose information in its possession if required to do so by applicable law, regulation, legal process, or governmental request, or when reasonably necessary to protect the rights, property, or safety of the Service Provider, its users, or others."
+      },
+      {
+        "type": "heading",
+        "text": "Changes to This Privacy Policy"
+      },
+      {
+        "type": "paragraph",
+        "text": "This Privacy Policy may be updated from time to time to reflect changes to the Application, third-party services, legal requirements, or our privacy practices."
+      },
+      {
+        "type": "paragraph",
+        "text": "Any updated Privacy Policy will be made available through the Application or the location where this Privacy Policy is published. The effective date shown at the top of this Privacy Policy will be updated accordingly."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users are encouraged to review this Privacy Policy periodically."
+      },
+      {
+        "type": "heading",
+        "text": "Your Consent"
+      },
+      {
+        "type": "paragraph",
+        "text": "By using the Application, you acknowledge the practices described in this Privacy Policy."
+      },
+      {
+        "type": "heading",
+        "text": "Contact Us"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you have any questions or concerns regarding this Privacy Policy or the privacy practices of the Application, please contact:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Amiristan SMC PVT LTD."
+      },
+      {
+        "type": "paragraph",
+        "text": "Email: info@amiristan.com"
+      }
+    ]
+  },
+  "Terms": {
+    "title": "Terms and Conditions",
+    "blocks": [
+      {
+        "type": "paragraph",
+        "text": "Effective Date: October 28, 2026"
+      },
+      {
+        "type": "paragraph",
+        "text": "These Terms and Conditions (“Terms”) apply to the AI Chatbot: Ask AI Assistant mobile application (“Application”), developed and provided by Amiristan SMC PVT LTD. (“Service Provider”, “we”, “us”, or “our”)."
+      },
+      {
+        "type": "paragraph",
+        "text": "By downloading, accessing, purchasing, subscribing to, or using the Application, you agree to these Terms. If you do not agree with these Terms, you should not use the Application."
+      },
+      {
+        "type": "heading",
+        "text": "1. About the Application"
+      },
+      {
+        "type": "paragraph",
+        "text": "AI Chatbot: Ask AI Assistant is an AI-powered application designed to provide users with conversational assistance, answers, content generation, writing assistance, information, and other AI-powered functionality."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may use third-party artificial intelligence services and other third-party technologies to generate or process content."
+      },
+      {
+        "type": "paragraph",
+        "text": "AI-generated information is provided for general informational and assistance purposes and should not be considered a substitute for professional, legal, medical, financial, or other specialized advice."
+      },
+      {
+        "type": "heading",
+        "text": "2. AI-Generated Content"
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain content provided through the Application is generated using artificial intelligence."
+      },
+      {
+        "type": "paragraph",
+        "text": "Artificial intelligence systems can produce inaccurate, incomplete, outdated, misleading, or inappropriate information. The Service Provider does not guarantee that AI-generated responses will always be accurate, complete, reliable, or suitable for a particular purpose."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users are responsible for independently reviewing and verifying important information before relying upon it."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider is not responsible for decisions or actions taken based on AI-generated content."
+      },
+      {
+        "type": "heading",
+        "text": "3. User Content"
+      },
+      {
+        "type": "paragraph",
+        "text": "Users may be able to submit questions, prompts, text, images, documents, or other content (“User Content”) to use certain features of the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "You are responsible for the content you submit and must ensure that you have the necessary rights and permissions to use and submit such content."
+      },
+      {
+        "type": "paragraph",
+        "text": "You must not submit content that:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Violates applicable laws or regulations;",
+          "Infringes intellectual property or other rights of another person;",
+          "Contains unlawful, abusive, fraudulent, malicious, or harmful material;",
+          "Attempts to interfere with, exploit, reverse engineer, or compromise the Application or its supporting services; or",
+          "Is otherwise prohibited by these Terms."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain User Content may be transmitted to third-party service providers when necessary to provide requested functionality. Such processing is subject to our Privacy Policy and, where applicable, the policies of the relevant third-party provider."
+      },
+      {
+        "type": "heading",
+        "text": "4. Third-Party Services"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may depend on third-party services, including artificial intelligence providers, cloud infrastructure, application marketplaces, subscription systems, and other technology providers."
+      },
+      {
+        "type": "paragraph",
+        "text": "The availability and operation of certain Application features may therefore depend on these third-party services."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not control all aspects of third-party services and cannot guarantee their continuous availability, accuracy, performance, or functionality."
+      },
+      {
+        "type": "paragraph",
+        "text": "Third-party services may be governed by their own terms, policies, and privacy practices."
+      },
+      {
+        "type": "heading",
+        "text": "5. Privacy"
+      },
+      {
+        "type": "paragraph",
+        "text": "Your use of the Application is also subject to our Privacy Policy."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not directly collect or store users’ personal data on its own servers through the Application except where specifically disclosed."
+      },
+      {
+        "type": "paragraph",
+        "text": "Certain information or content may be processed by third-party services when required to provide functionality requested by the user. Please review the Privacy Policy for additional information regarding data processing and third-party services."
+      },
+      {
+        "type": "heading",
+        "text": "6. Freemium Features"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may provide certain features free of charge while requiring payment or a subscription to access premium functionality."
+      },
+      {
+        "type": "paragraph",
+        "text": "The availability, limitations, usage allowances, and functionality of free and premium features may change over time."
+      },
+      {
+        "type": "paragraph",
+        "text": "We reserve the right to add, modify, restrict, or discontinue features where reasonably necessary to improve, maintain, or operate the Application."
+      },
+      {
+        "type": "heading",
+        "text": "7. Subscriptions and In-App Purchases"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application may offer auto-renewable subscriptions or other in-app purchases."
+      },
+      {
+        "type": "paragraph",
+        "text": "Where purchases are made through the Apple App Store, payment will be charged to your Apple ID account according to Apple’s applicable payment terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "Subscription prices, durations, trial periods, and other purchase information will be displayed within the Application or on the applicable App Store purchase screen before you complete a purchase."
+      },
+      {
+        "type": "paragraph",
+        "text": "Unless otherwise stated, an auto-renewable subscription will automatically renew unless it is cancelled before the end of the current subscription period in accordance with the applicable App Store requirements."
+      },
+      {
+        "type": "paragraph",
+        "text": "You can manage or cancel subscriptions through your Apple ID Account Settings on your device."
+      },
+      {
+        "type": "paragraph",
+        "text": "Pricing and subscription terms may be updated from time to time. Where required by applicable App Store rules, you will be notified of price changes in advance."
+      },
+      {
+        "type": "heading",
+        "text": "8. Billing and Cancellations"
+      },
+      {
+        "type": "paragraph",
+        "text": "All payment transactions, billing inquiries, and subscription management are handled directly by the Apple App Store (or other marketplace provider through which you downloaded the Application)."
+      },
+      {
+        "type": "paragraph",
+        "text": "Because the Service Provider does not directly process payments or manage App Store accounts, the Service Provider cannot directly issue refunds, pause subscriptions, or modify billing details for App Store purchases."
+      },
+      {
+        "type": "paragraph",
+        "text": "If you wish to request a refund, you must do so through Apple’s refund request process in accordance with Apple’s policies."
+      },
+      {
+        "type": "heading",
+        "text": "9. User Responsibilities"
+      },
+      {
+        "type": "paragraph",
+        "text": "You agree to use the Application in compliance with these Terms, applicable laws, and relevant third-party terms (including App Store rules and guidelines)."
+      },
+      {
+        "type": "paragraph",
+        "text": "You are responsible for:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Maintaining the security of your device;"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ensuring you have internet access required to use online features of the Application; and"
+      },
+      {
+        "type": "paragraph",
+        "text": "The accuracy and legality of any content you submit through the Application."
+      },
+      {
+        "type": "heading",
+        "text": "10. Prohibited Activities"
+      },
+      {
+        "type": "paragraph",
+        "text": "You agree that you will not:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Gain unauthorized access to the Application or associated systems;",
+          "Circumvent subscription, payment, usage, or feature restrictions;",
+          "Abuse or excessively automate requests to the Application;",
+          "Reverse engineer, modify, decompile, or interfere with the Application except where permitted by applicable law;",
+          "Use automated systems, bots, scripts, or similar mechanisms to exploit the Application;",
+          "Introduce malware or other harmful code;",
+          "Interfere with the Application’s infrastructure or third-party services; or",
+          "Use the Application for unlawful purposes."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "We reserve the right to restrict or terminate access where we reasonably determine that the Application is being abused or used in violation of these Terms."
+      },
+      {
+        "type": "heading",
+        "text": "11. Intellectual Property"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application, including its design, software, branding, graphics, interfaces, and original content, is owned by or licensed to Amiristan SMC PVT LTD. and is protected by applicable intellectual property laws."
+      },
+      {
+        "type": "paragraph",
+        "text": "These Terms do not grant users ownership of the Application or any intellectual property belonging to the Service Provider."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users receive a limited, personal, non-exclusive, non-transferable, and revocable right to use the Application in accordance with these Terms."
+      },
+      {
+        "type": "heading",
+        "text": "12. Availability and Changes to the Service"
+      },
+      {
+        "type": "paragraph",
+        "text": "We aim to keep the Application operational but do not guarantee uninterrupted or error-free availability."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Application or individual features may occasionally be unavailable due to maintenance, technical problems, third-party service outages, upgrades, security requirements, or circumstances outside our reasonable control."
+      },
+      {
+        "type": "paragraph",
+        "text": "We may update, modify, replace, suspend, or discontinue features of the Application when reasonably necessary."
+      },
+      {
+        "type": "heading",
+        "text": "13. Disclaimer of Warranties"
+      },
+      {
+        "type": "paragraph",
+        "text": "To the maximum extent permitted by applicable law, the Application and its content are provided on an “AS IS” and “AS AVAILABLE” basis."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not warrant that:"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The Application will always be available or error-free;",
+          "AI-generated content will always be accurate or complete;",
+          "The Application will meet every user’s individual requirements;",
+          "Third-party services will remain available; or",
+          "Every defect or technical issue will be corrected immediately."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Nothing in these Terms excludes warranties or rights that cannot legally be excluded under applicable consumer protection laws."
+      },
+      {
+        "type": "heading",
+        "text": "14. Limitation of Liability"
+      },
+      {
+        "type": "paragraph",
+        "text": "To the maximum extent permitted by applicable law, Amiristan SMC PVT LTD. will not be liable for indirect, incidental, special, consequential, or similar damages resulting from the use of, inability to use, or reliance upon the Application or AI-generated content."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider is not responsible for losses resulting from inaccurate AI-generated information, third-party service failures, network interruptions, device problems, or misuse of the Application."
+      },
+      {
+        "type": "paragraph",
+        "text": "Nothing in these Terms limits liability where such limitation is prohibited by applicable law."
+      },
+      {
+        "type": "heading",
+        "text": "15. Termination"
+      },
+      {
+        "type": "paragraph",
+        "text": "You may stop using the Application at any time."
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider may suspend or terminate access to the Application where reasonably necessary, including in cases involving abuse, fraud, security threats, unlawful activity, violation of these Terms, or attempts to circumvent Application restrictions."
+      },
+      {
+        "type": "paragraph",
+        "text": "Termination of access does not automatically cancel subscriptions managed through a third-party application marketplace. Users remain responsible for cancelling active subscriptions through the applicable marketplace."
+      },
+      {
+        "type": "heading",
+        "text": "16. Children’s Use"
+      },
+      {
+        "type": "paragraph",
+        "text": "The Service Provider does not knowingly collect personal information from children under the age of 13."
+      },
+      {
+        "type": "paragraph",
+        "text": "Users who are not legally able to consent to these Terms in their jurisdiction should use the Application only with the involvement and consent of a parent or legal guardian where required by applicable law."
+      },
+      {
+        "type": "paragraph",
+        "text": "Parents and guardians are encouraged to supervise children’s use of AI-powered services."
+      },
+      {
+        "type": "heading",
+        "text": "17. Changes to These Terms"
+      },
+      {
+        "type": "paragraph",
+        "text": "We may update these Terms from time to time to reflect changes to the Application, third-party services, legal requirements, or our business practices."
+      },
+      {
+        "type": "paragraph",
+        "text": "The updated Terms will be made available through the Application or the location where these Terms are published, and the effective date will be updated accordingly."
+      },
+      {
+        "type": "paragraph",
+        "text": "Continued use of the Application following an update constitutes acceptance of the revised Terms to the extent permitted by applicable law."
+      },
+      {
+        "type": "heading",
+        "text": "18. Apple App Store Terms"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you download the Application through the Apple App Store, you acknowledge that these Terms are between you and Amiristan SMC PVT LTD., and not Apple."
+      },
+      {
+        "type": "paragraph",
+        "text": "Apple is not responsible for the Application or its content, maintenance, support, or services except as required under Apple’s applicable terms."
+      },
+      {
+        "type": "paragraph",
+        "text": "Your use of the Application must also comply with applicable Apple Media Services Terms and Conditions and App Store rules."
+      },
+      {
+        "type": "heading",
+        "text": "19. Contact Us"
+      },
+      {
+        "type": "paragraph",
+        "text": "If you have questions about these Terms and Conditions or the Application, please contact:"
+      },
+      {
+        "type": "paragraph",
+        "text": "Amiristan SMC PVT LTD."
+      },
+      {
+        "type": "paragraph",
+        "text": "Email: info@amiristan.com"
+      }
+    ]
+  }
+}

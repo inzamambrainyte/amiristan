@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56cec8" />
+      <stop offset="50%" stop-color="#46bab4" />
+      <stop offset="100%" stop-color="#2a8b86" />
+    </linearGradient>
+
+    <!-- Subtle Inner Highlight -->
+    <linearGradient id="highlightGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Monogram Gradient -->
+    <linearGradient id="letterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdfc" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow for Emblem -->
+    <filter id="subtleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#144d4a" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Circular Base Container -->
+  <circle cx="256" cy="256" r="236" fill="url(#bgGrad)" />
+
+  <!-- Subtle Rim Light -->
+  <circle cx="256" cy="256" r="234" fill="none" stroke="url(#highlightGrad)" stroke-width="4" />
+
+  <!-- Modern Amiristan Monogram "A" with Spark -->
+  <g filter="url(#subtleShadow)">
+    <!-- Stylized Modern "A" -->
+    <!-- Left Leg -->
+    <path
+      d="M 175 365 L 235 155 C 238 144 246 137 256 137 C 266 137 274 144 277 155 L 337 365 C 340 375 334 385 323 385 C 315 385 308 379 306 371 L 285 295 L 227 295 L 206 371 C 204 379 197 385 189 385 C 178 385 172 375 175 365 Z M 235 263 L 277 263 L 256 186 Z"
+      fill="url(#letterGrad)"
+    />
+
+    <!-- Modern Central Diamond / Spark Accent representing AI & Innovation -->
+    <polygon
+      points="256,92 264,112 284,120 264,128 256,148 248,128 228,120 248,112"
+      fill="#ffffff"
+      opacity="0.95"
+    />
+  </g>
+</svg>
+

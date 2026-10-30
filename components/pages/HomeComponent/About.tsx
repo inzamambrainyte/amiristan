@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import data from "@/content/data.json";
 
 export const About: React.FC = () => {
-  const { badge, title, paragraphs, ctaText, ctaLink } = data.Home.about;
-  const productLink = process.env.NEXT_PUBLIC_APP_STORE_URL || ctaLink;
+  const { title, paragraphs, ctaText, ctaLink } = data.Home.about;
 
   return (
     <section id="about-us" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
@@ -20,11 +19,6 @@ export const About: React.FC = () => {
         >
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-[radial-gradient(ellipse_at_top,rgba(243,128,32,0.12),transparent_70%)] pointer-events-none" />
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6 relative z-10">
-            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
-            {badge}
-          </div>
-
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-8 relative z-10">
             {title}
           </h2>
@@ -36,10 +30,10 @@ export const About: React.FC = () => {
           </div>
 
           <a
-            href={productLink}
+            href={ctaLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-base font-medium text-white bg-gradient-to-r from-[#f38020] to-[#fa8c34] hover:shadow-[0_10px_28px_rgba(243,128,32,0.4)] active:scale-[0.98] transition-all duration-200 shadow-md relative z-10 cursor-pointer"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-xl text-base font-medium text-white bg-gradient-to-r from-[#f38020] to-[#fa8c34] hover:from-[#fa8c34] hover:to-[#f38020] hover:shadow-[0_10px_28px_rgba(243,128,32,0.4)] active:scale-[0.98] transition-all duration-200 shadow-md relative z-10 cursor-pointer"
           >
             <span>{ctaText}</span>
           </a>

@@ -83,7 +83,7 @@ export const Card: React.FC<CardItem> = ({
           </h3>
           {badge && (
             <span
-              className={`text-xs font-medium px-2.5 py-0.5 rounded-full border transition-all duration-500 ${
+              className={`text-xs font-medium px-2.5 py-0.5 rounded-md border transition-all duration-500 ${
                 isHovered
                   ? "bg-white/20 text-white border-white/40"
                   : "bg-[#f38020]/10 text-[#f38020] border-[#f38020]/25"

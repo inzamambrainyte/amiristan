@@ -6,21 +6,17 @@ import { Plus } from "@phosphor-icons/react";
 import data from "@/content/data.json";
 
 export const FAQ: React.FC = () => {
-  const [openId, setOpenId] = useState<string | null>(null);
-  const { badge, title, subtitle, items } = data.Home.faq;
+  const { title, subtitle, items } = data.Home.faq;
+  const [openId, setOpenId] = useState<string | null>(items[0]?.id || null);
 
-  const toggleItem = (id: string) => {
-    setOpenId(openId === id ? null : id);
+  const toggleAccordion = (id: string) => {
+    setOpenId((prev) => (prev === id ? null : id));
   };
 
   return (
     <section id="faq" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
-            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
-            {badge}
-          </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-4">
             {title}
           </h2>
@@ -44,22 +40,18 @@ export const FAQ: React.FC = () => {
               >
                 <button
                   type="button"
-                  onClick={() => toggleItem(item.id)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 focus:outline-none cursor-pointer"
+                  onClick={() => toggleAccordion(item.id)}
                   aria-expanded={isOpen}
+                  className="w-full flex items-center justify-between p-6 sm:p-7 text-left cursor-pointer focus:outline-none"
                 >
-                  <span
-                    className={`text-base sm:text-lg font-medium transition-colors ${
-                      isOpen ? "text-[#f38020]" : "text-slate-900"
-                    }`}
-                  >
+                  <span className="font-semibold text-lg sm:text-xl text-slate-900 pr-6">
                     {item.question}
                   </span>
                   <div
-                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 ${
+                    className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${
                       isOpen
-                        ? "rotate-45 bg-[#f38020] text-white shadow-sm"
-                        : "rotate-0 text-[#f38020] bg-[#fff7ed] border border-[#f38020]/20"
+                        ? "bg-[#f38020] text-white border-[#f38020] rotate-45"
+                        : "bg-slate-50 text-slate-500 border-slate-200/80 rotate-0"
                     }`}
                   >
                     <Plus size={18} weight="bold" />
@@ -72,9 +64,13 @@ export const FAQ: React.FC = () => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                      transition={{
+                        height: { duration: 0.35, ease: [0.22, 1, 0.36, 1] },
+                        opacity: { duration: 0.25 },
+                      }}
+                      className="overflow-hidden"
                     >
-                      <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 mt-1">
+                      <div className="px-6 pb-6 sm:px-7 sm:pb-7 text-base sm:text-lg leading-relaxed text-slate-600 border-t border-slate-100 pt-4">
                         {item.answer}
                       </div>
                     </motion.div>

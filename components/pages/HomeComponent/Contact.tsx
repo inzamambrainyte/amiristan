@@ -1,15 +1,13 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
-import { CheckCircle, WarningCircle } from "@phosphor-icons/react";
 import { Input, Textarea, Button } from "@/components/ui";
-import { useContactForm } from "@/hooks";
 import data from "@/content/data.json";
+import { useContactForm } from "@/hooks";
 
 export const Contact: React.FC = () => {
-  const { badge, title, description, form, ctaLink } = data.Contact;
+  const { title, description, form } = data.Contact;
 
   const {
     formData,
@@ -34,11 +32,6 @@ export const Contact: React.FC = () => {
         >
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-[radial-gradient(ellipse_at_top,rgba(243,128,32,0.1),transparent_70%)] pointer-events-none" />
 
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6 relative z-10">
-            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
-            {badge}
-          </div>
-
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6 text-center relative z-10">
             {title.includes("to hear") ? (
               <>
@@ -49,94 +42,97 @@ export const Contact: React.FC = () => {
             )}
           </h2>
 
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg mb-10 text-center relative z-10">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl text-center mb-12 relative z-10">
             {description}
           </p>
 
           <form
             onSubmit={handleSubmit}
-            className="w-full max-w-xl flex flex-col gap-5 text-left relative z-10"
+            className="w-full max-w-xl flex flex-col gap-6 relative z-10"
           >
-            <div className="flex flex-col sm:flex-row gap-5">
+            <div className="w-full flex flex-col gap-2">
+              <label
+                htmlFor="name"
+                className="text-sm font-medium text-slate-700 select-none pl-1"
+              >
+                {form.nameLabel}
+              </label>
               <Input
-                label={form?.nameLabel || "Name"}
+                id="name"
                 name="name"
                 type="text"
-                required
-                minLength={2}
-                maxLength={50}
+                placeholder={form.namePlaceholder}
                 value={formData.name}
                 onChange={handleChange}
-                placeholder={form?.namePlaceholder || "Your Full Name"}
-              />
-
-              <Input
-                label={form?.emailLabel || "Email"}
-                name="email"
-                type="email"
                 required
-                minLength={5}
+                minLength={2}
                 maxLength={100}
-                value={formData.email}
-                onChange={handleChange}
-                placeholder={form?.emailPlaceholder || "name@example.com"}
+                disabled={status === "loading"}
               />
             </div>
 
-            <Input
-              label={form?.subjectLabel || "Subject"}
-              name="subject"
-              type="text"
-              required
-              minLength={3}
-              maxLength={100}
-              value={formData.subject}
-              onChange={handleChange}
-              placeholder={form?.subjectPlaceholder || "Subject of inquiry"}
-            />
+            <div className="w-full flex flex-col gap-2">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium text-slate-700 select-none pl-1"
+              >
+                {form.emailLabel}
+              </label>
+              <Input
+                id="email"
+                name="email"
+                type="email"
+                placeholder={form.emailPlaceholder}
+                value={formData.email}
+                onChange={handleChange}
+                required
+                disabled={status === "loading"}
+              />
+            </div>
 
-            <Textarea
-              label={form?.messageLabel || "Message"}
-              name="message"
-              rows={4}
-              required
-              minLength={10}
-              maxLength={1000}
-              value={formData.message}
-              onChange={handleChange}
-              placeholder={form?.messagePlaceholder || "Tell us how we can help..."}
-            />
+            <div className="w-full flex flex-col gap-2">
+              <label
+                htmlFor="message"
+                className="text-sm font-medium text-slate-700 select-none pl-1"
+              >
+                {form.messageLabel}
+              </label>
+              <Textarea
+                id="message"
+                name="message"
+                placeholder={form.messagePlaceholder}
+                value={formData.message}
+                onChange={handleChange}
+                required
+                rows={5}
+                minLength={10}
+                maxLength={5000}
+                disabled={status === "loading"}
+              />
+            </div>
 
-            {status === "success" && (
-              <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3 text-sm">
-                <CheckCircle size={20} weight="fill" className="text-emerald-500 shrink-0" />
-                <span>{feedbackMessage}</span>
-              </div>
-            )}
-
-            {status === "error" && (
-              <div className="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-3 text-sm">
-                <WarningCircle size={20} weight="fill" className="text-rose-500 shrink-0" />
-                <span>{feedbackMessage}</span>
-              </div>
-            )}
-
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+            <div className="pt-2 flex flex-col items-center gap-4">
               <Button
                 type="submit"
+                disabled={status === "loading"}
                 isLoading={status === "loading"}
-                loadingText={form?.submittingButton || "Sending..."}
+                loadingText={form.submittingButton}
                 className="w-full sm:w-auto"
               >
-                {form?.submitButton || "Send Message"}
+                {form.submitButton}
               </Button>
 
-              <Link
-                href={ctaLink || "/contact"}
-                className="text-xs sm:text-sm text-slate-500 hover:text-[#f38020] underline transition-colors"
-              >
-                Go to Contact Us Page →
-              </Link>
+              {status === "success" && (
+                <p className="text-emerald-700 text-sm font-medium text-center animate-fade-in bg-emerald-500/10 px-4 py-2 rounded-xl border border-emerald-500/20">
+                  {feedbackMessage}
+                </p>
+              )}
+
+              {status === "error" && (
+                <p className="text-rose-700 text-sm font-medium text-center animate-fade-in bg-rose-500/10 px-4 py-2 rounded-xl border border-rose-500/20">
+                  {feedbackMessage}
+                </p>
+              )}
             </div>
           </form>
         </motion.div>

@@ -38,12 +38,12 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
   };
 
   return (
-    <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-6 sm:px-10 lg:px-12 max-w-[1100px] mx-auto flex flex-col items-center">
+    <main className="w-full flex-grow pt-28 sm:pt-36 pb-24 px-6 sm:px-10 lg:px-12 max-w-[1100px] mx-auto flex flex-col items-center">
       <motion.div
         initial={{
           opacity: 0,
           scale: 0.98,
-          y: 30,
+          y: 20,
         }}
         animate={{
           opacity: 1,
@@ -56,10 +56,6 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
         }}
         className="w-full text-center mb-10 sm:mb-14"
       >
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-slate-200/90 shadow-sm text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-5">
-          <span className="w-2 h-2 rounded-full bg-[#f38020] animate-pulse" />
-          <span>Legal & Transparency</span>
-        </div>
         <h1 className="text-4xl sm:text-5xl md:text-[56px] font-bold text-slate-900 tracking-tight">
           {title}
         </h1>
@@ -69,7 +65,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
         initial={{
           opacity: 0.001,
           scale: 0.98,
-          y: 40,
+          y: 30,
         }}
         animate={{
           opacity: 1,

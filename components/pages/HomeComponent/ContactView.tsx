@@ -246,18 +246,33 @@ export const ContactView: React.FC = () => {
               </p>
             </div>
           </div>
-
-          <div className="pt-2 flex justify-start">
-            <Link
-              href="/"
-              className="inline-flex items-center gap-2 text-sm font-medium text-slate-600 hover:text-[#f38020] transition-colors"
-            >
-              <ArrowLeft size={16} weight="bold" />
-              <span>Back to Overview</span>
-            </Link>
-          </div>
         </motion.div>
       </div>
+
+      <motion.div
+        initial={{
+          opacity: 0,
+          y: 15,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+          delay: 0.35,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        className="w-full flex justify-center mt-12 sm:mt-16"
+      >
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl border border-slate-200/90 bg-white/90 shadow-sm text-sm font-medium text-slate-600 hover:text-[#f38020] hover:border-[#f38020]/40 transition-all duration-200"
+        >
+          <ArrowLeft size={16} weight="bold" />
+          <span>Back to Overview</span>
+        </Link>
+      </motion.div>
     </main>
   );
 };

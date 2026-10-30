@@ -46,20 +46,22 @@ export const Card: React.FC<CardItem> = ({
       initial="rest"
       whileHover="hover"
       animate="rest"
-      className="group flex flex-col items-center justify-start text-center p-[30px] bg-[#ecedf1] rounded-[25px] transition-all duration-300 shadow-neu-card hover:shadow-[0_16px_36px_rgba(243,128,32,0.3)] hover:border-[#f38020]/40 border border-white/50 h-full gap-6 relative overflow-hidden"
+      className="group flex flex-col items-center justify-start text-center p-[30px] bg-[#ecedf1] rounded-[25px] transition-all duration-500 shadow-neu-card hover:shadow-[0_16px_36px_rgba(243,128,32,0.3)] hover:border-[#f38020]/40 border border-white/50 h-full gap-6 relative overflow-hidden"
     >
       <motion.div
         variants={{
           rest: {
             clipPath: "circle(0% at 0% 0%)",
-            opacity: 0,
+            transition: {
+              duration: 0.65,
+              ease: [0.22, 1, 0.36, 1],
+            },
           },
           hover: {
             clipPath: "circle(150% at 0% 0%)",
-            opacity: 1,
             transition: {
-              duration: 0.45,
-              ease: [0.16, 1, 0.3, 1],
+              duration: 0.75,
+              ease: [0.22, 1, 0.36, 1],
             },
           },
         }}

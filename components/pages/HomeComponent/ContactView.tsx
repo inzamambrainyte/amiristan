@@ -32,7 +32,7 @@ export const ContactView: React.FC = () => {
         initial={{
           opacity: 0,
           scale: 0.96,
-          y: 30,
+          y: 20,
         }}
         animate={{
           opacity: 1,
@@ -45,11 +45,12 @@ export const ContactView: React.FC = () => {
         }}
         className="w-full max-w-3xl text-center flex flex-col items-center mb-12 sm:mb-16"
       >
-        <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
+          <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
           {badge}
         </div>
 
-        <h1 className="text-3xl sm:text-5xl md:text-[56px] font-semibold text-[#1c1c1c] tracking-tight leading-[1.2] mb-4">
+        <h1 className="text-3xl sm:text-5xl md:text-[56px] font-bold text-slate-900 tracking-tight leading-[1.2] mb-4">
           {title.includes("to hear") ? (
             <>
               {title.split("to hear")[0]}{" "}
@@ -62,7 +63,7 @@ export const ContactView: React.FC = () => {
           )}
         </h1>
 
-        <p className="text-base sm:text-lg text-[#4d4d4d] leading-relaxed max-w-xl">
+        <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
           {description}
         </p>
       </motion.div>
@@ -71,7 +72,7 @@ export const ContactView: React.FC = () => {
         initial={{
           opacity: 0,
           scale: 0.98,
-          y: 30,
+          y: 20,
         }}
         animate={{
           opacity: 1,
@@ -86,42 +87,42 @@ export const ContactView: React.FC = () => {
         className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
       >
         <div className="lg:col-span-5 flex flex-col gap-6">
-          <div className="bg-[#ecedf1] rounded-[25px] p-6 sm:p-8 shadow-neu-card border border-white/50 flex items-start gap-5">
-            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#f38020] shrink-0">
-              <EnvelopeSimple size={28} weight="regular" />
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] flex items-start gap-5">
+            <div className="w-14 h-14 rounded-2xl bg-[#fff7ed] border border-[#f38020]/20 flex items-center justify-center text-[#f38020] shrink-0">
+              <EnvelopeSimple size={26} weight="regular" />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-lg font-semibold text-[#1c1c1c]">Email Support</h3>
+              <h3 className="text-lg font-semibold text-slate-900">Email Support</h3>
               <a
                 href={`mailto:${data.config.contactEmail}`}
                 className="text-base font-medium text-[#f38020] hover:underline"
               >
                 {data.config.contactEmail}
               </a>
-              <p className="text-sm text-[#666666] mt-1">
+              <p className="text-sm text-slate-500 mt-1">
                 We typically reply within 24 business hours.
               </p>
             </div>
           </div>
 
-          <div className="bg-[#ecedf1] rounded-[25px] p-6 sm:p-8 shadow-neu-card border border-white/50 flex items-start gap-5">
-            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#f38020] shrink-0">
-              <MapPin size={28} weight="regular" />
+          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] flex items-start gap-5">
+            <div className="w-14 h-14 rounded-2xl bg-[#fff7ed] border border-[#f38020]/20 flex items-center justify-center text-[#f38020] shrink-0">
+              <MapPin size={26} weight="regular" />
             </div>
             <div className="flex flex-col gap-1">
-              <h3 className="text-lg font-semibold text-[#1c1c1c]">Company</h3>
-              <p className="text-base text-[#1c1c1c] font-medium">
+              <h3 className="text-lg font-semibold text-slate-900">Company</h3>
+              <p className="text-base text-slate-800 font-medium">
                 {data.config.siteName}
               </p>
-              <p className="text-sm text-[#666666]">
-                DriveConnect & AI Chatbot Solutions
+              <p className="text-sm text-slate-500">
+                DriveConnect &amp; AI Chatbot Solutions
               </p>
             </div>
           </div>
         </div>
 
-        <div className="lg:col-span-7 bg-[#ecedf1] rounded-[25px] p-8 sm:p-10 shadow-neu-card border border-white/50">
-          <h2 className="text-2xl font-semibold text-[#1c1c1c] mb-6">
+        <div className="lg:col-span-7 bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/80 shadow-[0_12px_36px_rgba(15,23,42,0.04)]">
+          <h2 className="text-2xl font-semibold text-slate-900 mb-6">
             Send us a Message
           </h2>
 
@@ -167,7 +168,7 @@ export const ContactView: React.FC = () => {
             <Textarea
               label={form?.messageLabel || "Message"}
               name="message"
-              rows={5}
+              rows={4}
               required
               minLength={10}
               maxLength={1000}
@@ -177,27 +178,29 @@ export const ContactView: React.FC = () => {
             />
 
             {status === "success" && (
-              <div className="p-4 rounded-[18px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 flex items-center gap-3 text-sm">
+              <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3 text-sm">
                 <CheckCircle size={20} weight="fill" className="text-emerald-500 shrink-0" />
                 <span>{feedbackMessage}</span>
               </div>
             )}
 
             {status === "error" && (
-              <div className="p-4 rounded-[18px] bg-rose-500/10 border border-rose-500/20 text-rose-700 flex items-center gap-3 text-sm">
+              <div className="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-3 text-sm">
                 <WarningCircle size={20} weight="fill" className="text-rose-500 shrink-0" />
                 <span>{feedbackMessage}</span>
               </div>
             )}
 
-            <Button
-              type="submit"
-              isLoading={status === "loading"}
-              loadingText={form?.submittingButton || "Sending..."}
-              className="self-start"
-            >
-              {form?.submitButton || "Send Message"}
-            </Button>
+            <div className="pt-2">
+              <Button
+                type="submit"
+                isLoading={status === "loading"}
+                loadingText={form?.submittingButton || "Sending..."}
+                className="w-full sm:w-auto"
+              >
+                {form?.submitButton || "Send Message"}
+              </Button>
+            </div>
           </form>
         </div>
       </motion.div>

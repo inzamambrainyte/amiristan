@@ -23,7 +23,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
               <a
                 key={index}
                 href={`mailto:${part}`}
-                className="text-[#f38020] underline hover:text-[#1c1c1c] transition-colors"
+                className="text-[#f38020] underline hover:text-[#d96b0f] font-medium transition-colors"
               >
                 {part}
               </a>
@@ -38,7 +38,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
   };
 
   return (
-    <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-6 sm:px-10 lg:px-12 max-w-[1300px] mx-auto flex flex-col items-center">
+    <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-6 sm:px-10 lg:px-12 max-w-[1100px] mx-auto flex flex-col items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -54,9 +54,13 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
           duration: 0.6,
           ease: [0.22, 1, 0.36, 1],
         }}
-        className="w-full max-w-[1000px] text-center mb-10 sm:mb-14"
+        className="w-full text-center mb-10 sm:mb-14"
       >
-        <h1 className="text-4xl sm:text-5xl md:text-[60px] font-semibold text-[#1c1c1c] tracking-tight">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 border border-slate-200/90 shadow-sm text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-5">
+          <span className="w-2 h-2 rounded-full bg-[#f38020] animate-pulse" />
+          <span>Legal & Transparency</span>
+        </div>
+        <h1 className="text-4xl sm:text-5xl md:text-[56px] font-bold text-slate-900 tracking-tight">
           {title}
         </h1>
       </motion.div>
@@ -64,8 +68,8 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
       <motion.div
         initial={{
           opacity: 0.001,
-          scale: 0.9,
-          y: 80,
+          scale: 0.98,
+          y: 40,
         }}
         animate={{
           opacity: 1,
@@ -73,18 +77,18 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
           y: 0,
         }}
         transition={{
-          duration: 1.8,
-          delay: 0.3,
+          duration: 0.8,
+          delay: 0.15,
           ease: [0.16, 1, 0.3, 1],
         }}
-        className="w-full max-w-[1300px] text-left text-lg sm:text-[22px] leading-[1.5] text-[#4d4d4d] space-y-6"
+        className="w-full bg-white/95 rounded-3xl p-8 sm:p-12 border border-slate-200/80 shadow-[0_12px_36px_rgba(15,23,42,0.04)] text-left text-base sm:text-lg leading-relaxed text-slate-600 space-y-6"
       >
         {blocks.map((block, idx) => {
           if (block.type === "heading") {
             return (
               <h2
                 key={idx}
-                className="text-xl sm:text-[22px] font-semibold text-[#1c1c1c] pt-4"
+                className="text-xl sm:text-2xl font-bold text-slate-900 pt-4 first:pt-0"
               >
                 {block.text}
               </h2>
@@ -95,7 +99,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
             return (
               <ul
                 key={idx}
-                className="list-disc pl-8 space-y-2 text-lg sm:text-[22px] leading-[1.5]"
+                className="list-disc pl-6 space-y-2 text-base sm:text-lg leading-relaxed text-slate-600"
               >
                 {block.items.map((item, itemIdx) => (
                   <li key={itemIdx}>{renderTextWithLinks(item)}</li>
@@ -105,7 +109,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
           }
 
           return (
-            <p key={idx} className="text-lg sm:text-[22px] leading-[1.5]">
+            <p key={idx} className="text-base sm:text-lg leading-relaxed text-slate-600">
               {block.text ? renderTextWithLinks(block.text) : ""}
             </p>
           );

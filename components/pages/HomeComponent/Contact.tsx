@@ -23,36 +23,39 @@ export const Contact: React.FC = () => {
   });
 
   return (
-    <section id="contact" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 30, scale: 0.98 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="bg-[#ecedf1] rounded-[25px] p-8 sm:p-12 md:p-16 shadow-neu-card border border-white/50 flex flex-col items-center"
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-white/95 rounded-3xl p-8 sm:p-12 md:p-16 border border-slate-200/90 shadow-[0_12px_36px_rgba(15,23,42,0.04)] flex flex-col items-center relative overflow-hidden"
         >
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-[radial-gradient(ellipse_at_top,rgba(243,128,32,0.1),transparent_70%)] pointer-events-none" />
+
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6 relative z-10">
+            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
             {badge}
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1c1c] mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-6 text-center relative z-10">
             {title.includes("to hear") ? (
               <>
-                {title.split("to hear")[0]} <span className="font-light">to hear{title.split("to hear")[1]}</span>
+                {title.split("to hear")[0]} <span className="font-light text-slate-600">to hear{title.split("to hear")[1]}</span>
               </>
             ) : (
               title
             )}
           </h2>
 
-          <p className="text-base sm:text-lg text-[#4d4d4d] leading-relaxed max-w-lg mb-10 text-center">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-lg mb-10 text-center relative z-10">
             {description}
           </p>
 
           <form
             onSubmit={handleSubmit}
-            className="w-full max-w-xl flex flex-col gap-5 text-left"
+            className="w-full max-w-xl flex flex-col gap-5 text-left relative z-10"
           >
             <div className="flex flex-col sm:flex-row gap-5">
               <Input
@@ -105,14 +108,14 @@ export const Contact: React.FC = () => {
             />
 
             {status === "success" && (
-              <div className="p-4 rounded-[18px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 flex items-center gap-3 text-sm">
+              <div className="p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-3 text-sm">
                 <CheckCircle size={20} weight="fill" className="text-emerald-500 shrink-0" />
                 <span>{feedbackMessage}</span>
               </div>
             )}
 
             {status === "error" && (
-              <div className="p-4 rounded-[18px] bg-rose-500/10 border border-rose-500/20 text-rose-700 flex items-center gap-3 text-sm">
+              <div className="p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-800 flex items-center gap-3 text-sm">
                 <WarningCircle size={20} weight="fill" className="text-rose-500 shrink-0" />
                 <span>{feedbackMessage}</span>
               </div>
@@ -130,7 +133,7 @@ export const Contact: React.FC = () => {
 
               <Link
                 href={ctaLink || "/contact"}
-                className="text-xs sm:text-sm text-[#666666] hover:text-[#f38020] underline transition-colors"
+                className="text-xs sm:text-sm text-slate-500 hover:text-[#f38020] underline transition-colors"
               >
                 Go to Contact Us Page →
               </Link>

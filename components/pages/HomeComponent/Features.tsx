@@ -9,22 +9,23 @@ export const Features: React.FC = () => {
   const { title, subtitle, items } = data.Home.features;
 
   return (
-    <section id="services" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col items-center">
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
+            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
             Features
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-[45px] font-semibold tracking-tight text-[#f38020] leading-[1.4] mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.25] mb-4">
             {title.startsWith("Features") ? (
               <>
-                Features <span className="text-[#1c1c1c]">{title.replace("Features", "").trim()}</span>
+                <span className="text-[#f38020]">Features</span> {title.replace("Features", "").trim()}
               </>
             ) : (
               title
             )}
           </h2>
-          <p className="text-base sm:text-lg text-[#4d4d4d] leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
             {subtitle}
           </p>
         </div>
@@ -32,7 +33,7 @@ export const Features: React.FC = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: "-80px" }}
           variants={{
             hidden: { opacity: 0 },
             visible: {
@@ -42,18 +43,18 @@ export const Features: React.FC = () => {
               },
             },
           }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
         >
           {items.map((item) => (
             <motion.div
               key={item.id}
               variants={{
-                hidden: { opacity: 0, y: 35, scale: 0.96 },
+                hidden: { opacity: 0, y: 30, scale: 0.98 },
                 visible: {
                   opacity: 1,
                   y: 0,
                   scale: 1,
-                  transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+                  transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
                 },
               }}
             >

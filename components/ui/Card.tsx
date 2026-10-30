@@ -46,7 +46,7 @@ export const Card: React.FC<CardItem> = ({
     <div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="flex flex-col items-center justify-start text-center p-[30px] bg-[#ecedf1] rounded-[25px] shadow-neu-card border border-[#a6abbd]/20 h-full gap-6 relative overflow-hidden"
+      className="flex flex-col items-center justify-start text-center p-8 sm:p-9 bg-white rounded-3xl border border-slate-200/80 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_20px_40px_-12px_rgba(243,128,32,0.25)] hover:border-[#f38020]/40 h-full gap-6 relative overflow-hidden transition-all duration-300"
     >
       <motion.div
         initial={{ clipPath: "circle(0% at 0% 0%)" }}
@@ -62,15 +62,21 @@ export const Card: React.FC<CardItem> = ({
         className="absolute inset-0 bg-gradient-to-br from-[#faae40] via-[#f38020] to-[#d96b0f] pointer-events-none z-0"
       />
 
-      <div className="relative z-10 w-[100px] h-[100px] rounded-full flex items-center justify-center bg-[#ecedf1] shadow-neu-icon text-[#f38020] shrink-0">
-        <IconComponent size={48} weight="regular" />
+      <div
+        className={`relative z-10 w-20 h-20 rounded-2xl flex items-center justify-center transition-all duration-500 shrink-0 ${
+          isHovered
+            ? "bg-white shadow-md text-[#f38020]"
+            : "bg-[#fff7ed] border border-[#f38020]/20 text-[#f38020]"
+        }`}
+      >
+        <IconComponent size={40} weight="regular" />
       </div>
 
       <div className="relative z-10 flex flex-col items-center gap-2">
         <div className="flex items-center gap-2 flex-wrap justify-center">
           <h3
             className={`text-xl font-semibold tracking-tight transition-colors duration-500 ${
-              isHovered ? "text-white" : "text-[#1c1c1c]"
+              isHovered ? "text-white" : "text-slate-900"
             }`}
           >
             {title}
@@ -79,7 +85,7 @@ export const Card: React.FC<CardItem> = ({
             <span
               className={`text-xs font-medium px-2.5 py-0.5 rounded-full border transition-all duration-500 ${
                 isHovered
-                  ? "bg-white/15 text-white border-white/40"
+                  ? "bg-white/20 text-white border-white/40"
                   : "bg-[#f38020]/10 text-[#f38020] border-[#f38020]/25"
               }`}
             >
@@ -90,7 +96,7 @@ export const Card: React.FC<CardItem> = ({
 
         <p
           className={`text-sm sm:text-base leading-relaxed max-w-sm transition-colors duration-500 ${
-            isHovered ? "text-white/95" : "text-[#4d4d4d]"
+            isHovered ? "text-white/95" : "text-slate-600"
           }`}
         >
           {description}
@@ -101,4 +107,3 @@ export const Card: React.FC<CardItem> = ({
 };
 
 export default Card;
-

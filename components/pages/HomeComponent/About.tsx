@@ -9,24 +9,27 @@ export const About: React.FC = () => {
   const productLink = process.env.NEXT_PUBLIC_APP_STORE_URL || ctaLink;
 
   return (
-    <section id="about-us" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section id="about-us" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 35, scale: 0.98 }}
+          initial={{ opacity: 0, y: 30, scale: 0.98 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="bg-[#ecedf1] rounded-[25px] p-8 sm:p-12 md:p-16 shadow-neu-card border border-white/50 text-center flex flex-col items-center"
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-white/95 rounded-3xl p-8 sm:p-14 md:p-16 border border-slate-200/90 shadow-[0_12px_36px_rgba(15,23,42,0.04)] relative overflow-hidden text-center flex flex-col items-center"
         >
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-48 bg-[radial-gradient(ellipse_at_top,rgba(243,128,32,0.12),transparent_70%)] pointer-events-none" />
+
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#f38020]/25 shadow-[0_2px_12px_rgba(243,128,32,0.1)] text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6 relative z-10">
+            <span className="w-2 h-2 rounded-full bg-[#f38020] shadow-[0_0_8px_#f38020] animate-pulse" />
             {badge}
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1c1c] mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 mb-8 relative z-10">
             {title}
           </h2>
 
-          <div className="space-y-6 text-[#4d4d4d] text-base sm:text-lg leading-relaxed max-w-2xl text-center mb-10">
+          <div className="space-y-6 text-slate-600 text-base sm:text-lg leading-relaxed max-w-2xl text-center mb-10 relative z-10">
             {paragraphs.map((p, idx) => (
               <p key={idx}>{p}</p>
             ))}
@@ -36,7 +39,7 @@ export const About: React.FC = () => {
             href={productLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3.5 rounded-[50px] text-base font-medium text-white bg-[#f38020] hover:bg-[#fa8c34] active:bg-[#d96b0f] transition-all duration-200 shadow-neu-button hover:shadow-[0_8px_24px_rgba(243,128,32,0.38)] active:shadow-neu-button-inset active:scale-[0.98]"
+            className="inline-flex items-center justify-center px-8 py-3.5 rounded-full text-base font-medium text-white bg-gradient-to-r from-[#f38020] to-[#fa8c34] hover:shadow-[0_10px_28px_rgba(243,128,32,0.4)] active:scale-[0.98] transition-all duration-200 shadow-md relative z-10 cursor-pointer"
           >
             <span>{ctaText}</span>
           </a>

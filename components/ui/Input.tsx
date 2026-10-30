@@ -19,7 +19,7 @@ export const Input: React.FC<InputProps> = ({
       {label && (
         <label
           htmlFor={inputId}
-          className="text-sm font-medium text-[#1c1c1c]"
+          className="text-sm font-medium text-slate-700"
         >
           {label}
         </label>
@@ -27,7 +27,7 @@ export const Input: React.FC<InputProps> = ({
       <input
         id={inputId}
         name={name}
-        className={`w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#f38020] transition-all text-sm sm:text-base border border-white/30 ${className}`}
+        className={`w-full px-4 py-3.5 rounded-2xl bg-white text-slate-900 placeholder:text-slate-400 border border-slate-200/90 shadow-sm focus:outline-none focus:border-[#f38020] focus:ring-4 focus:ring-[#f38020]/10 transition-all text-sm sm:text-base ${className}`}
         {...props}
       />
     </div>
@@ -35,4 +35,3 @@ export const Input: React.FC<InputProps> = ({
 };
 
 export default Input;
-

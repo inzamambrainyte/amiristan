@@ -66,7 +66,7 @@ export const Contact: React.FC = () => {
                 onChange={handleChange}
                 required
                 minLength={2}
-                maxLength={100}
+                maxLength={50}
                 disabled={status === "loading"}
               />
             </div>
@@ -92,6 +92,27 @@ export const Contact: React.FC = () => {
 
             <div className="w-full flex flex-col gap-2">
               <label
+                htmlFor="subject"
+                className="text-sm font-medium text-slate-700 select-none pl-1"
+              >
+                {form.subjectLabel || "Subject"}
+              </label>
+              <Input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder={form.subjectPlaceholder || "Subject of inquiry"}
+                value={formData.subject}
+                onChange={handleChange}
+                required
+                minLength={3}
+                maxLength={100}
+                disabled={status === "loading"}
+              />
+            </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <label
                 htmlFor="message"
                 className="text-sm font-medium text-slate-700 select-none pl-1"
               >
@@ -106,7 +127,7 @@ export const Contact: React.FC = () => {
                 required
                 rows={5}
                 minLength={10}
-                maxLength={5000}
+                maxLength={1000}
                 disabled={status === "loading"}
               />
             </div>

@@ -9,55 +9,38 @@ export const Benefits: React.FC = () => {
   const { title, subtitle, items } = data.Home.benefits;
 
   return (
-    <section id="benefits" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative">
+    <section id="benefits" className="py-20 md:py-28 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-slate-900 leading-[1.25] mb-4">
-            {title.startsWith("Benefits") ? (
-              <>
-                Benefits <span className="text-[#f38020]">{title.replace("Benefits", "").trim()}</span>
-              </>
-            ) : (
-              title
-            )}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#f38020] leading-[1.25] mb-4">
+            {title}
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
             {subtitle}
           </p>
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-80px" }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.08,
-              },
-            },
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
-        >
-          {items.map((item) => (
-            <motion.div
-              key={item.id}
-              variants={{
-                hidden: { opacity: 0, y: 30, scale: 0.98 },
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                  scale: 1,
-                  transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
-                },
-              }}
-            >
-              <Card {...item} />
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          {items.map((item, idx) => {
+            const isLeft = idx % 2 === 0;
+
+            return (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, x: isLeft ? -70 : 70, scale: 0.98 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{
+                  duration: 1.1,
+                  delay: (idx % 2) * 0.12,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+              >
+                <Card {...item} layout="horizontal" />
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

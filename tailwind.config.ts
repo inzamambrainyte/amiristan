@@ -8,7 +8,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#f8f9fc",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
         surface: "#ffffff",
         primary: {
           DEFAULT: "#f38020",

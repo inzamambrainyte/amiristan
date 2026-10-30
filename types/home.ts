@@ -30,6 +30,7 @@ export interface CardItem {
   description: string;
   iconName: string;
   badge?: string;
+  layout?: "vertical" | "horizontal";
 }
 
 export interface SectionContent {

@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.variable}>
-      <body className={`${poppins.className} font-poppins antialiased bg-[#f8f9fc] text-[#111827] min-h-screen flex flex-col justify-between selection:bg-[#f38020]/15 selection:text-[#f38020]`}>
+      <body className={`${poppins.className} font-poppins antialiased bg-background text-foreground min-h-screen flex flex-col justify-between selection:bg-[#f38020]/15 selection:text-[#f38020]`}>
         <Navbar />
         {children}
         <Footer />

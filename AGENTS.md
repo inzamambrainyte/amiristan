@@ -11,19 +11,20 @@
 * **Design Philosophy:** Soft Neumorphic UI with subtle embossed highlights, inset badge pills, and circular debossed icon wells.
 * **Color Palette:**
   * Background / Base Surface: `#ecedf1` (`rgb(236, 237, 241)`)
-  * Primary Accent / Buttons / Badges / Link Hover / Card Icons: `#46bab4` (`rgb(70, 186, 180)`)
-  * Button Hover: `#000000` (black)
+  * Primary Accent / Buttons / Badges / Link Hover / Card Icons: `#f38020` (Cloudflare Orange) with `#faae40` (Highlight)
+  * Button Hover: `#fa8c34` / Active `#d96b0f`
   * Heading Text: `#1c1c1c` (`rgb(28, 28, 28)`)
   * Body Text: `#4d4d4d` (`rgb(77, 77, 77)`), Muted text: `#666666`
 * **Box Shadows & Radii:**
   * Cards: `box-shadow: -10px -10px 20px #fafbff, 10px 10px 20px #a6abbd40; border-radius: 25px; padding: 30px; gap: 24px;`
+  * Card Hover: `3D magnetic tilt (y: -8, scale: 1.015) with Cloudflare orange glow`
   * Icon Wells: `width: 100px; height: 100px; border-radius: 50%; box-shadow: inset -5px -5px 10px #fafbff, inset 5px 5px 10px #a6abbd40;`
-  * Card Icons: `size: 48px; color: #46bab4;`
-  * Badges & Pills: `box-shadow: inset -2px -2px 4px 0px #fafbff, inset 2px 2px 4px 0px rgba(70, 186, 180, 0.25); border-radius: 50px;`
+  * Card Icons: `size: 48px; color: #f38020;`
+  * Badges & Pills: `box-shadow: inset -2px -2px 4px 0px #fafbff, inset 2px 2px 4px 0px rgba(243, 128, 32, 0.25); border-radius: 50px;`
   * Buttons: `box-shadow: -5px -5px 10px 0px #fafbff, 5px 5px 10px 0px rgba(166, 171, 189, 0.5); border-radius: 50px; padding: 16px 32px;`
-  * Social Icon Buttons: `width: 70px; height: 70px; border-radius: 50px; box-shadow: -5px -5px 10px 0px #fafbff, 5px 5px 10px 0px rgba(166, 171, 189, 0.25);` Expanding hover circle: LinkedIn `#0077b5`, Twitter `#1da1f2`, Instagram `linear-gradient(45deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%)`, Facebook `#1877f2`. Icon color transitions `#1c1c1c` -> `#ffffff`. Spring: `stiffness: 500, damping: 60`.
+  * Social Icon Buttons: `width: 64px; height: 64px; border-radius: 50px; 3D magnetic spring lift (y: -6, scale: 1.06) with orange shadow glow; icon rotation -6deg`
   * Navbar: `box-shadow: inset -5px -5px 5px 0px #fafbff, inset 5px 5px 5px 0px rgba(166, 171, 189, 0.25); border-radius: 50px; max-width: 1360px;`
-  * Navbar Sliding Pill: Glassmorphic translucent surface pill `bg-[#ecedf1]/60 backdrop-blur-md border border-white/80 shadow-[-2px_-2px_6px_rgba(255,255,255,0.9),2px_2px_8px_rgba(166,171,189,0.25),inset_0_1px_1px_rgba(255,255,255,0.8)] border-radius: 50px;` Spring: `stiffness: 400, damping: 25`.
+  * Navbar Indicator: Cloudflare-orange active indicator with warm bottom glow bar; spring: `stiffness: 450, damping: 30`.
 * **Typography:**
   * Primary Font: `Poppins` via `next/font/google` (`subsets: ["latin"]`, `display: "swap"`, weights: `300, 400, 500, 600, 700`)
   * Section Titles: 45px font size (Poppins 600)

@@ -32,7 +32,7 @@ export const Contact: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="bg-[#ecedf1] rounded-[25px] p-8 sm:p-12 md:p-16 shadow-neu-card border border-white/50 flex flex-col items-center"
         >
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-6">
+          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-6">
             {badge}
           </div>
 
@@ -130,7 +130,7 @@ export const Contact: React.FC = () => {
 
               <Link
                 href={ctaLink || "/contact"}
-                className="text-xs sm:text-sm text-[#666666] hover:text-[#46bab4] underline transition-colors"
+                className="text-xs sm:text-sm text-[#666666] hover:text-[#f38020] underline transition-colors"
               >
                 Go to Contact Us Page →
               </Link>

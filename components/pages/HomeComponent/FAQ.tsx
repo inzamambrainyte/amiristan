@@ -17,7 +17,7 @@ export const FAQ: React.FC = () => {
     <section id="faq" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col items-center">
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-4">
+          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
             {badge}
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1c1c1c] mb-4">
@@ -35,20 +35,28 @@ export const FAQ: React.FC = () => {
             return (
               <div
                 key={item.id}
-                className="bg-[#ecedf1] rounded-[20px] transition-all duration-300 shadow-neu-faq border border-white/40 overflow-hidden"
+                className={`bg-[#ecedf1] rounded-[20px] transition-all duration-300 shadow-neu-faq border overflow-hidden ${
+                  isOpen
+                    ? "border-[#f38020]/40 shadow-[0_8px_24px_rgba(243,128,32,0.12)]"
+                    : "border-white/40 hover:border-[#f38020]/20"
+                }`}
               >
                 <button
                   type="button"
                   onClick={() => toggleItem(item.id)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 focus:outline-none"
+                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 focus:outline-none cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base sm:text-lg font-medium text-[#1c1c1c]">
+                  <span className={`text-base sm:text-lg font-medium transition-colors ${
+                    isOpen ? "text-[#f38020]" : "text-[#1c1c1c]"
+                  }`}>
                     {item.question}
                   </span>
                   <div
-                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 bg-[#ecedf1] shadow-neu-badge text-[#46bab4] ${
-                      isOpen ? "rotate-45" : "rotate-0"
+                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-all duration-300 shadow-neu-badge ${
+                      isOpen
+                        ? "rotate-45 bg-[#f38020] text-white"
+                        : "rotate-0 text-[#f38020] bg-[#ecedf1]"
                     }`}
                   >
                     <Plus size={18} weight="bold" />
@@ -61,7 +69,7 @@ export const FAQ: React.FC = () => {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.3, ease: "easeInOut" }}
+                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                     >
                       <div className="px-6 pb-6 pt-1 text-sm sm:text-base text-[#4d4d4d] leading-relaxed border-t border-black/5 mt-1">
                         {item.answer}

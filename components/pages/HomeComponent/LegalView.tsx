@@ -23,7 +23,7 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
               <a
                 key={index}
                 href={`mailto:${part}`}
-                className="text-[#46bab4] underline hover:text-[#1c1c1c] transition-colors"
+                className="text-[#f38020] underline hover:text-[#1c1c1c] transition-colors"
               >
                 {part}
               </a>
@@ -41,9 +41,9 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
     <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-6 sm:px-10 lg:px-12 max-w-[1300px] mx-auto flex flex-col items-center">
       <motion.div
         initial={{
-          opacity: 0.001,
-          scale: 0.9,
-          y: 80,
+          opacity: 0,
+          scale: 0.98,
+          y: 30,
         }}
         animate={{
           opacity: 1,
@@ -51,9 +51,8 @@ export const LegalView: React.FC<LegalViewProps> = ({ data }) => {
           y: 0,
         }}
         transition={{
-          duration: 1.8,
-          delay: 0.2,
-          ease: [0.16, 1, 0.3, 1],
+          duration: 0.6,
+          ease: [0.22, 1, 0.36, 1],
         }}
         className="w-full max-w-[1000px] text-center mb-10 sm:mb-14"
       >

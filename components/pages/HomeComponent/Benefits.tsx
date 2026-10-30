@@ -12,13 +12,13 @@ export const Benefits: React.FC = () => {
     <section id="benefits" className="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-14 flex flex-col items-center">
-          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-4">
+          <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
             Benefits
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-[45px] font-semibold tracking-tight text-[#1c1c1c] leading-[1.4] mb-4">
             {title.startsWith("Benefits") ? (
               <>
-                Benefits <span className="text-[#46bab4]">{title.replace("Benefits", "").trim()}</span>
+                Benefits <span className="text-[#f38020]">{title.replace("Benefits", "").trim()}</span>
               </>
             ) : (
               title
@@ -38,7 +38,7 @@ export const Benefits: React.FC = () => {
             visible: {
               opacity: 1,
               transition: {
-                staggerChildren: 0.1,
+                staggerChildren: 0.08,
               },
             },
           }}
@@ -48,8 +48,13 @@ export const Benefits: React.FC = () => {
             <motion.div
               key={item.id}
               variants={{
-                hidden: { opacity: 0, y: 30 },
-                visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+                hidden: { opacity: 0, y: 35, scale: 0.96 },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
+                },
               }}
             >
               <Card {...item} />

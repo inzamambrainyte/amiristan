@@ -98,8 +98,8 @@ export const Footer: React.FC = () => {
   return (
     <footer className="w-full bg-[#ecedf1] py-8 sm:py-10 px-4 sm:px-6">
       <div className="max-w-[1360px] mx-auto flex flex-col items-center gap-6">
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-[50px] h-[50px] rounded-full overflow-hidden shrink-0 flex items-center justify-center">
+        <Link href="/" className="flex items-center gap-2.5 group">
+          <div className="w-[50px] h-[50px] rounded-full overflow-hidden shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
             <Image
               src={logoPath}
               alt={brandName}
@@ -108,7 +108,7 @@ export const Footer: React.FC = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <span className="font-medium text-2xl text-[#1c1c1c] tracking-tight">
+          <span className="font-medium text-2xl text-[#1c1c1c] group-hover:text-[#f38020] transition-colors tracking-tight">
             {brandName}
           </span>
         </Link>
@@ -123,7 +123,7 @@ export const Footer: React.FC = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-[#46bab4] transition-colors duration-200"
+                  className="hover:text-[#f38020] transition-colors duration-200"
                 >
                   {link.label}
                 </a>
@@ -133,7 +133,7 @@ export const Footer: React.FC = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className="hover:text-[#46bab4] transition-colors duration-200"
+                className="hover:text-[#f38020] transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -156,22 +156,17 @@ export const Footer: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={item.name}
-                  initial="rest"
-                  whileHover="hover"
-                  animate="rest"
-                  className="relative w-[70px] h-[70px] rounded-[50px] bg-[#ecedf1] shadow-neu-button flex items-center justify-center overflow-hidden cursor-pointer shrink-0"
+                  whileHover={{
+                    y: -6,
+                    scale: 1.06,
+                    transition: { type: "spring", stiffness: 450, damping: 22 },
+                  }}
+                  whileTap={{ scale: 0.94 }}
+                  className="relative w-[64px] h-[64px] rounded-[50px] bg-[#ecedf1] shadow-neu-button hover:shadow-[0_12px_24px_rgba(243,128,32,0.28),-5px_-5px_10px_#fafbff] flex items-center justify-center overflow-hidden cursor-pointer shrink-0 text-[#1c1c1c] hover:text-[#f38020] transition-colors group"
                 >
-                  <motion.div
-                    variants={bgVariants}
-                    style={item.bgStyle}
-                    className="absolute rounded-full pointer-events-none"
-                  />
-                  <motion.span
-                    variants={iconVariants}
-                    className="relative z-10 flex items-center justify-center"
-                  >
+                  <span className="relative z-10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
                     <IconComp size={28} weight="regular" />
-                  </motion.span>
+                  </span>
                 </motion.a>
               );
             })}

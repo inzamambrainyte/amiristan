@@ -29,7 +29,7 @@ export const Textarea: React.FC<TextareaProps> = ({
         id={textareaId}
         name={name}
         rows={rows}
-        className={`w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#46bab4] transition-all text-sm sm:text-base border border-white/30 resize-none ${className}`}
+        className={`w-full px-4 py-3 rounded-[18px] bg-[#ecedf1] text-[#1c1c1c] placeholder:text-[#8c909e] shadow-neu-badge focus:outline-none focus:ring-2 focus:ring-[#f38020] transition-all text-sm sm:text-base border border-white/30 resize-none ${className}`}
         {...props}
       />
     </div>

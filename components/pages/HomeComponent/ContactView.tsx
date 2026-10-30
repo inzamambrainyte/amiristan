@@ -30,9 +30,9 @@ export const ContactView: React.FC = () => {
     <main className="w-full flex-grow pt-36 sm:pt-44 pb-24 px-4 sm:px-6 lg:px-8 max-w-[1300px] mx-auto flex flex-col items-center">
       <motion.div
         initial={{
-          opacity: 0.001,
-          scale: 0.9,
-          y: 80,
+          opacity: 0,
+          scale: 0.96,
+          y: 30,
         }}
         animate={{
           opacity: 1,
@@ -40,13 +40,12 @@ export const ContactView: React.FC = () => {
           y: 0,
         }}
         transition={{
-          duration: 1.8,
-          delay: 0.2,
-          ease: [0.16, 1, 0.3, 1],
+          duration: 0.6,
+          ease: [0.22, 1, 0.36, 1],
         }}
         className="w-full max-w-3xl text-center flex flex-col items-center mb-12 sm:mb-16"
       >
-        <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#46bab4] mb-4">
+        <div className="inline-flex items-center px-5 py-2 rounded-full bg-[#ecedf1] shadow-neu-badge text-xs font-semibold uppercase tracking-wider text-[#f38020] mb-4">
           {badge}
         </div>
 
@@ -54,7 +53,7 @@ export const ContactView: React.FC = () => {
           {title.includes("to hear") ? (
             <>
               {title.split("to hear")[0]}{" "}
-              <span className="text-[#46bab4]">
+              <span className="text-[#f38020]">
                 to hear{title.split("to hear")[1]}
               </span>
             </>
@@ -70,9 +69,9 @@ export const ContactView: React.FC = () => {
 
       <motion.div
         initial={{
-          opacity: 0.001,
-          scale: 0.9,
-          y: 80,
+          opacity: 0,
+          scale: 0.98,
+          y: 30,
         }}
         animate={{
           opacity: 1,
@@ -80,22 +79,22 @@ export const ContactView: React.FC = () => {
           y: 0,
         }}
         transition={{
-          duration: 1.8,
-          delay: 0.3,
-          ease: [0.16, 1, 0.3, 1],
+          duration: 0.6,
+          delay: 0.15,
+          ease: [0.22, 1, 0.36, 1],
         }}
         className="w-full grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"
       >
         <div className="lg:col-span-5 flex flex-col gap-6">
           <div className="bg-[#ecedf1] rounded-[25px] p-6 sm:p-8 shadow-neu-card border border-white/50 flex items-start gap-5">
-            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#46bab4] shrink-0">
+            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#f38020] shrink-0">
               <EnvelopeSimple size={28} weight="regular" />
             </div>
             <div className="flex flex-col gap-1">
               <h3 className="text-lg font-semibold text-[#1c1c1c]">Email Support</h3>
               <a
                 href={`mailto:${data.config.contactEmail}`}
-                className="text-base font-medium text-[#46bab4] hover:underline"
+                className="text-base font-medium text-[#f38020] hover:underline"
               >
                 {data.config.contactEmail}
               </a>
@@ -106,7 +105,7 @@ export const ContactView: React.FC = () => {
           </div>
 
           <div className="bg-[#ecedf1] rounded-[25px] p-6 sm:p-8 shadow-neu-card border border-white/50 flex items-start gap-5">
-            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#46bab4] shrink-0">
+            <div className="w-[60px] h-[60px] rounded-full bg-[#ecedf1] shadow-neu-icon flex items-center justify-center text-[#f38020] shrink-0">
               <MapPin size={28} weight="regular" />
             </div>
             <div className="flex flex-col gap-1">

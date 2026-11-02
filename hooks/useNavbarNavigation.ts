@@ -12,7 +12,11 @@ export const useNavbarNavigation = (
 
   useEffect(() => {
     if (pathname !== "/") {
-      setActiveHref(null);
+      if (pathname === "/products") {
+        setActiveHref("/products");
+      } else {
+        setActiveHref(null);
+      }
       return;
     }
 

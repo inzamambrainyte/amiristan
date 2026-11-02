@@ -30,6 +30,10 @@
       {
         "label": "FAQ",
         "href": "/#faq"
+      },
+      {
+        "label": "Products",
+        "href": "/products"
       }
     ],
     "ctaText": "Contact Us",
@@ -37,8 +41,8 @@
   },
   "Home": {
     "hero": {
-      "title": "AI Chatbot",
-      "description": "AI Chatbot Assistant is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere."
+      "title": "Amiristan",
+      "description": "Amiristan is an intelligent digital product ecosystem delivering next-generation AI productivity, smart workflows, and adaptive solutions. Designed to empower creators, professionals, and modern teams to work smarter, save hours, and scale effortlessly."
     },
     "features": {
       "title": "Features we Offer",
@@ -132,8 +136,8 @@
         "Amiristan is a forward-thinking digital products company dedicated to creating smart, simple, and impactful software experiences. We specialize in next-generation AI tools, productivity apps, and utility solutions designed to empower users and businesses worldwide.",
         "With a strong focus on innovation, design excellence, and user-first experiences, Amiristan continues to push the boundaries of what technology can do—turning powerful ideas into everyday solutions that make life easier, faster, and more intelligent."
       ],
-      "ctaText": "View Our Product",
-      "ctaLink": ""
+      "ctaText": "View Our Products",
+      "ctaLink": "/products"
     },
     "faq": {
       "badge": "FAQ",
@@ -166,6 +170,94 @@
           "answer": "Simply contact our team—we’ll assess your needs, create a plan, and start building your solution."
         }
       ]
+    }
+  },
+  "Product": {
+    "title": "Our Products",
+    "subtitle": "Discover our suite of intelligent mobile applications and AI productivity tools.",
+    "items": [
+      {
+        "id": "ai-chatbot",
+        "title": "AI Chatbot",
+        "category": "AI & Productivity",
+        "shortDescription": "Intelligent AI assistant powered by GPT-4 and GPT-5 for conversational writing, instant document analysis, and daily task acceleration.",
+        "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere.",
+        "iconName": "Robot",
+        "highlights": [
+          "Advanced GPT-4 & GPT-5 intelligence with natural conversational flow",
+          "Instant content writing, email generation, and creative ideation",
+          "Deep document and PDF summarization and insight extraction",
+          "Context retention with long-term memory for ongoing workflows",
+          "High-definition AI image creation with flexible prompt precision",
+          "Seamless chat history and session management across devices"
+        ],
+        "preview": {
+          "type": "chat",
+          "badge": "v2.4",
+          "engine": "GPT-4 & GPT-5 Active",
+          "query": "Summarize this 40-page PDF report and outline key execution milestones for Q3.",
+          "resultTitle": "Key Highlights Extracted:",
+          "resultBullets": [
+            "28% efficiency boost via automated workflows",
+            "Integrated document synthesis pipeline",
+            "Real-time multi-platform sync delivered"
+          ],
+          "followUp": "Generate the launch announcement email for our subscribers.",
+          "footerLeft": "Instant Response Engine",
+          "footerRight": "0.18s latency"
+        },
+        "ctaText": "Get it on App Store",
+        "ctaLink": ""
+      },
+      {
+        "id": "doodle-party",
+        "title": "Doodle Party",
+        "category": "Teaching & Meetings",
+        "shortDescription": "Digital whiteboard designed for teaching, learning, and meetings with versatile drawing, voice recording, and idea presentation tools.",
+        "description": "Doodle Party is a digital whiteboard designed for teaching, learning, and meetings. Write, draw, explain ideas, create engaging lectures, and record sessions using simple and powerful tools.",
+        "iconName": "PencilSimple",
+        "highlights": [
+          "Drawing Tools: Pencil, pen, highlighter, and eraser",
+          "Writing Tools: Text, notes, and annotations",
+          "Shapes: Circles, arrows, lines, and diagrams",
+          "Teaching: Create and explain lectures visually",
+          "Recording: Record lectures with voice narration",
+          "Meetings: Present ideas and brainstorm collaboratively"
+        ],
+        "tools": "Pencil · Pen · Highlighter · Eraser · Text · Shapes · Color Picker · Undo · Redo · Image Insert · Voice Recording · Screen Recording · Clear Board",
+        "preview": {
+          "type": "whiteboard",
+          "badge": "Live Recording",
+          "engine": "Digital Whiteboard Engine",
+          "query": "Session: Visual Teaching & Team Brainstorming Board",
+          "resultTitle": "Main Tools Active:",
+          "resultBullets": [
+            "Pencil, Pen, Highlighter & Shape Annotations",
+            "Screen Recording with Voice Narration Active",
+            "Custom Colors, Backgrounds & Board Styles"
+          ],
+          "followUp": "Record lecture session and export high-resolution notes.",
+          "footerLeft": "Simple & Powerful Tools",
+          "footerRight": "HD Narration"
+        },
+        "ctaText": "Get it on App Store",
+        "ctaLink": "https://apps.apple.com"
+      }
+    ],
+    "flagship": {
+      "id": "ai-chatbot",
+      "title": "AI Chatbot",
+      "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere.",
+      "highlights": [
+        "Advanced GPT-4 & GPT-5 intelligence with natural conversational flow",
+        "Instant content writing, email generation, and creative ideation",
+        "Deep document and PDF summarization and insight extraction",
+        "Context retention with long-term memory for ongoing workflows",
+        "High-definition AI image creation with flexible prompt precision",
+        "Seamless chat history and session management across devices"
+      ],
+      "ctaText": "Get it on App Store",
+      "ctaLink": ""
     }
   },
   "Contact": {
@@ -201,6 +293,10 @@
       {
         "label": "Benefits",
         "href": "/#benefits"
+      },
+      {
+        "label": "Products",
+        "href": "/products"
       },
       {
         "label": "Contact Us",

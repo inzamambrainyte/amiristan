@@ -123,10 +123,50 @@ export interface LegalContent {
   blocks: LegalBlock[];
 }
 
+export interface ProductPreviewData {
+  type?: string;
+  badge?: string;
+  engine?: string;
+  query: string;
+  resultTitle: string;
+  resultBullets: string[];
+  followUp: string;
+  footerLeft: string;
+  footerRight: string;
+}
+
+export interface ProductItem {
+  id: string;
+  title: string;
+  category?: string;
+  shortDescription?: string;
+  description: string;
+  iconName?: string;
+  highlights: string[];
+  tools?: string;
+  preview?: ProductPreviewData;
+  ctaText: string;
+  ctaLink?: string;
+}
+
+export interface ProductFlagship extends ProductItem {
+  badge?: string;
+  tagline?: string;
+}
+
+export interface ProductContent {
+  badge?: string;
+  title: string;
+  subtitle: string;
+  items?: ProductItem[];
+  flagship?: ProductFlagship;
+}
+
 export interface AppData {
   config: ConfigContent;
   Navigation: NavigationContent;
   Home: HomeContent;
+  Product: ProductContent;
   Contact: ContactContent;
   Footer: FooterContent;
   Privacy: LegalContent;

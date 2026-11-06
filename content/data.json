@@ -1,10 +1,10 @@
 {
   "config": {
     "siteName": "Amiristan",
-    "metaTitle": "Amiristan",
-    "metaDescription": "Amiristan is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences. We design and build high-quality solutions that blend technology, creativity, and seamless user experiences.",
-    "ogTitle": "Amiristan",
-    "ogDescription": "Amiristan is a Pakistan-based mobile app product company creating innovative, user-friendly apps for global audiences.",
+    "metaTitle": "Amiristan | Native iOS Studio for Doodle Party & AI Chatbot",
+    "metaDescription": "Amiristan is an Apple App Store development studio creating high-impact iOS applications, featuring Doodle Party for live visual teaching and AI Chatbot for conversational productivity.",
+    "ogTitle": "Amiristan | Creative Drawing and Intelligent AI on the App Store",
+    "ogDescription": "Discover Amiristan top-rated iOS applications: Doodle Party for live teaching and sketching, and AI Chatbot for smart writing and research.",
     "ogImage": "/logo.png",
     "favicon": "/logo.png",
     "siteUrl": "https://amiristan.com",
@@ -42,132 +42,148 @@
   "Home": {
     "hero": {
       "title": "Amiristan",
-      "description": "Amiristan is an intelligent digital product ecosystem delivering next-generation AI productivity, smart workflows, and adaptive solutions. Designed to empower creators, professionals, and modern teams to work smarter, save hours, and scale effortlessly."
+      "description": "Amiristan is an Apple App Store development studio creating versatile creative tools and intelligent productivity applications for iPad and iPhone. From our interactive Doodle Party drawing canvas for educators and visual creators to our conversational AI Chatbot for professionals, we engineer native iOS experiences that inspire, teach, and accelerate daily achievements."
     },
     "features": {
-      "title": "Features we Offer",
-      "subtitle": "Empower your business with AI-driven speed, efficiency, and personalization",
+      "title": "Two Creative Powerhouses for iPad & iPhone",
+      "subtitle": "Designed from the ground up for Apple hardware, intuitive touch gestures, and daily intellectual flow",
       "items": [
         {
           "id": "feature-1",
-          "title": "AI Content Generation",
-          "description": "Effortlessly generate blogs, emails, captions, reports, ideas, and more with smart context understanding.",
-          "iconName": "StarFour"
+          "title": "Infinite Live Sketchpad",
+          "badge": "Doodle Party",
+          "description": "Zero-boundary digital drawing canvas with custom grid paper and vibrant palettes tailored for visual thinkers.",
+          "iconName": "ChalkboardTeacher"
         },
         {
           "id": "feature-2",
-          "title": "Document & PDF Assistance",
-          "description": "Summarize long documents, extract key points, rewrite text, and analyze content instantly.",
-          "iconName": "FileDoc"
+          "title": "Sub-Millisecond Pencil Inking",
+          "badge": "Apple Pencil",
+          "description": "Ultra-responsive stroke dynamics with intelligent palm rejection and natural tilt shading on iPad.",
+          "iconName": "PencilSimple"
         },
         {
           "id": "feature-3",
-          "title": "Memory-Based Conversations",
-          "description": "Continue seamless chats with context retention for long workflows and ongoing tasks.",
-          "iconName": "Chats"
+          "title": "Live Presentation & Voice Recording",
+          "badge": "Classroom & Team",
+          "description": "Narrate lectures, annotate live diagrams, and capture high-resolution whiteboard video replays for students.",
+          "iconName": "Laptop"
         },
         {
           "id": "feature-4",
-          "title": "AI Image Generation",
-          "description": "Create stunning images, logos, concept art, and social media visuals with simple prompts.",
-          "iconName": "Image"
+          "title": "GPT-Powered Editorial Copilot",
+          "badge": "AI Chatbot",
+          "description": "Transform rough notes into publication-ready articles, executive pitches, and comprehensive project plans.",
+          "iconName": "Chats"
         },
         {
           "id": "feature-5",
-          "title": "Chat History & Saved Sessions",
-          "description": "Revisit past conversations and save important chats for future use.",
-          "iconName": "Timer"
+          "title": "Instant PDF Dossier Breakdown",
+          "badge": "Document Synthesis",
+          "description": "Ingest 50-page reports to extract key financial metrics, action items, and executive summaries in seconds.",
+          "iconName": "FileDoc"
         },
         {
           "id": "feature-6",
-          "title": "Multi-Platform Access",
-          "badge": "(Coming soon)",
-          "description": "Access the assistant from macOS, web, and upcoming mobile apps for a smooth cross-platform experience.",
-          "iconName": "Laptop"
+          "title": "Multi-Device iCloud Workspace",
+          "badge": "Cloud Sync",
+          "description": "Automatic synchronization across your iPad, iPhone, and Mac with zero configuration required.",
+          "iconName": "Timer"
         }
       ]
     },
     "benefits": {
-      "title": "Benefits of Using the App",
-      "subtitle": "Unlock business growth with innovative AI-driven capabilities",
+      "title": "Why Creators & Educators Choose Amiristan",
+      "subtitle": "Engineered to harness the full power of Apple Silicon with unmatched elegance and fluid responsiveness",
       "items": [
         {
           "id": "benefit-1",
-          "title": "Boost Productivity",
-          "description": "Finish tasks faster with instant assistance for writing, coding, analysis, and creative work.",
+          "title": "Engage Classrooms Visually",
+          "badge": "Education First",
+          "description": "Turn abstract mathematics, anatomical diagrams, and science lessons into interactive visual demonstrations.",
           "iconName": "ChartLineUp"
         },
         {
           "id": "benefit-2",
-          "title": "Save Hours Every Day",
-          "description": "From emails to complex problem-solving, get immediate, reliable results.",
-          "iconName": "Wallet"
+          "title": "ProMotion 120Hz Fluidity",
+          "badge": "Apple Silicon",
+          "description": "Experience buttery-smooth drawing and scrolling optimized specifically for iPad Pro and iPhone displays.",
+          "iconName": "Lightning"
         },
         {
           "id": "benefit-3",
-          "title": "Stay Organized",
-          "description": "Keep everything in one place with saved chats, project-wise conversations, and multi-device access.",
-          "iconName": "UserCircle"
+          "title": "Dual Visual & Textual Synergy",
+          "badge": "Versatile Suite",
+          "description": "Pair freeform visual sketch brainstorming directly with structured AI text generation and analysis.",
+          "iconName": "PuzzlePiece"
         },
         {
           "id": "benefit-4",
-          "title": "Scale Your Capabilities",
-          "description": "Perform like a full team—researcher, writer, designer, and strategist—all in one app.",
+          "title": "Voice-Annotated Lesson Archives",
+          "badge": "Audio Sync",
+          "description": "Create a personal library of narrated whiteboard tutorials for students and clients to revisit anytime.",
           "iconName": "ArrowsOut"
         },
         {
           "id": "benefit-5",
-          "title": "Work Smarter, Not Harder",
-          "description": "Let AI handle repetitive tasks while you focus on strategy and execution.",
-          "iconName": "Lightning"
+          "title": "Zero Cloud Data Mining",
+          "badge": "Strict Privacy",
+          "description": "On-device processing guarantees your proprietary drawings and sensitive drafts remain completely private.",
+          "iconName": "ShieldCheck"
         },
         {
           "id": "benefit-6",
-          "title": "Adaptive Solutions",
-          "description": "Benefit from AI that evolves continuously to match your changing business needs.",
-          "iconName": "PuzzlePiece"
+          "title": "Unified Apple Ecosystem Workflow",
+          "badge": "AirDrop & Files",
+          "description": "Effortlessly AirDrop exports, copy-paste across devices, and organize drawing assets via the native Files app.",
+          "iconName": "UserCircle"
         }
       ]
     },
     "about": {
-      "badge": "About",
-      "title": "Who We Are",
+      "badge": "Apple Developer Studio",
+      "title": "About Amiristan Studio",
       "paragraphs": [
-        "Amiristan is a forward-thinking digital products company dedicated to creating smart, simple, and impactful software experiences. We specialize in next-generation AI tools, productivity apps, and utility solutions designed to empower users and businesses worldwide.",
-        "With a strong focus on innovation, design excellence, and user-first experiences, Amiristan continues to push the boundaries of what technology can do—turning powerful ideas into everyday solutions that make life easier, faster, and more intelligent."
+        "Amiristan is an independent mobile application studio focused on crafting high-quality iOS and iPadOS experiences for global audiences. We believe software should be as creatively expressive as it is functionally powerful.",
+        "Our portfolio on the Apple App Store brings together two distinct creative pillars: Doodle Party, an interactive drawing and teaching canvas empowering educators, students, and teams; and AI Chatbot, a smart assistant accelerating research and daily correspondence. Together, they represent our dedication to elegance, performance, and user-first engineering."
       ],
       "ctaText": "View Our Products",
       "ctaLink": "/products"
     },
     "faq": {
-      "badge": "FAQ",
-      "title": "Your Questions, Answered",
-      "subtitle": "Answers to your most common questions about our AI services",
+      "badge": "Knowledge Base",
+      "title": "App Store & Licensing Questions",
+      "subtitle": "Details on Apple Pencil compatibility, App Store installation, volume classroom licensing, and data privacy",
       "items": [
         {
           "id": "faq-1",
-          "question": "What is AI automation and how can it help my business?",
-          "answer": "AI automation uses intelligent systems to handle repetitive tasks, reduce errors, and improve efficiency—allowing you to focus on growth and innovation."
+          "question": "Which Apple devices are compatible with Doodle Party and AI Chatbot?",
+          "answer": "Both apps run natively on iPadOS and iOS devices, with Doodle Party specifically optimized for iPad models supporting Apple Pencil (1st gen, 2nd gen, USB-C, and Apple Pencil Pro)."
         },
         {
           "id": "faq-2",
-          "question": "How long does it take to build a custom solution?",
-          "answer": "Most projects take 4–8 weeks, depending on complexity and your specific requirements."
+          "question": "Can educational institutions purchase Doodle Party in bulk?",
+          "answer": "Yes. Schools and universities can license Doodle Party through Apple School Manager and the Apple Volume Purchase Program (VPP) with educational discounts."
         },
         {
           "id": "faq-3",
-          "question": "Can you integrate AI with my existing systems?",
-          "answer": "Yes, we design AI solutions that seamlessly connect with your current tools and workflows."
+          "question": "Can I record voice while drawing in Doodle Party?",
+          "answer": "Yes. The built-in audio recorder synchronizes your voice narration with your canvas strokes, producing lightweight video lessons ready to export as MP4."
         },
         {
           "id": "faq-4",
-          "question": "What industries benefit most from your solutions?",
-          "answer": "Our AI tools work across industries including retail, healthcare, logistics, finance, education, and more."
+          "question": "Does AI Chatbot require an active internet connection?",
+          "answer": "AI Chatbot requires an active internet connection to communicate with advanced GPT inference servers, while your chat history is stored securely on your local device."
         },
         {
           "id": "faq-5",
-          "question": "How do I get started with an AI-powered business upgrade?",
-          "answer": "Simply contact our team—we’ll assess your needs, create a plan, and start building your solution."
+          "question": "Can I export Doodle Party boards into PDF or image formats?",
+          "answer": "Doodle Party supports one-tap export to vector PDF, high-resolution PNG, and MP4 video formats, enabling seamless sharing via AirDrop, Mail, or Google Drive."
+        },
+        {
+          "id": "faq-6",
+          "question": "Are updates and new drawing tools included with the app?",
+          "answer": "All standard drawing tools, grid templates, and stability updates are included. Major cloud AI expansion packs receive regular improvements via the App Store."
         }
       ]
     }
@@ -181,7 +197,7 @@
         "title": "AI Chatbot",
         "category": "AI & Productivity",
         "shortDescription": "Intelligent AI assistant powered by GPT-4 and GPT-5 for conversational writing, instant document analysis, and daily task acceleration.",
-        "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere.",
+        "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner - anytime, anywhere.",
         "iconName": "Robot",
         "highlights": [
           "Advanced GPT-4 & GPT-5 intelligence with natural conversational flow",
@@ -213,8 +229,8 @@
         "id": "doodle-party",
         "title": "Doodle Party",
         "category": "Teaching & Meetings",
-        "shortDescription": "Digital whiteboard designed for teaching, learning, and meetings with versatile drawing, voice recording, and idea presentation tools.",
-        "description": "Doodle Party is a digital whiteboard designed for teaching, learning, and meetings. Write, draw, explain ideas, create engaging lectures, and record sessions using simple and powerful tools.",
+        "shortDescription": "Digital drawing canvas designed for teaching, learning, and meetings with versatile sketch, voice recording, and idea presentation tools.",
+        "description": "Doodle Party is a digital drawing canvas designed for teaching, learning, and meetings. Write, draw, explain ideas, create engaging lectures, and record sessions using simple and powerful tools.",
         "iconName": "PencilSimple",
         "highlights": [
           "Drawing Tools: Pencil, pen, highlighter, and eraser",
@@ -228,7 +244,7 @@
         "preview": {
           "type": "whiteboard",
           "badge": "Live Recording",
-          "engine": "Digital Whiteboard Engine",
+          "engine": "Doodle Party Drawing Engine",
           "query": "Session: Visual Teaching & Team Brainstorming Board",
           "resultTitle": "Main Tools Active:",
           "resultBullets": [
@@ -247,7 +263,7 @@
     "flagship": {
       "id": "ai-chatbot",
       "title": "AI Chatbot",
-      "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner—anytime, anywhere.",
+      "description": "AI Chatbot is a smart AI companion powered by GPT-4 and GPT-5, helping you write, create, and solve tasks instantly. Your intelligent productivity partner - anytime, anywhere.",
       "highlights": [
         "Advanced GPT-4 & GPT-5 intelligence with natural conversational flow",
         "Instant content writing, email generation, and creative ideation",

@@ -15,6 +15,10 @@ import {
   ArrowsOut,
   Lightning,
   PuzzlePiece,
+  ChalkboardTeacher,
+  PencilSimple,
+  ShieldCheck,
+  Sparkle,
 } from "@phosphor-icons/react";
 import { CardItem } from "@/types";
 
@@ -31,6 +35,10 @@ const iconMap: Record<string, React.ElementType> = {
   ArrowsOut,
   Lightning,
   PuzzlePiece,
+  ChalkboardTeacher,
+  PencilSimple,
+  ShieldCheck,
+  Sparkle,
 };
 
 export const Card: React.FC<CardItem> = ({
